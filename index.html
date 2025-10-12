@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Course Library</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fcfaf6;
+      color: #2e2b25;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1 {
+      color: #7b5f2e;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    a {
+      display: block;
+      padding: 0.8rem 1rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #2e2b25;
+      transition: all 0.2s;
+    }
+    a:hover {
+      background: #f7f1e5;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #8a857f;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 AI Course Library</h1>
+  <div id="list">Loading courses...</div>
+
+  <footer>Powered by Base44 + GitHub + AI ✨</footer>
+
+  <script>
+    async function loadCourses() {
+      const repo = "YOUR_USERNAME/auto-course-generator";
+      const res = await fetch(`https://api.github.com/repos/${repo}/contents/content`);
+      const data = await res.json();
+
+      if (!Array.isArray(data)) {
+        document.getElementById("list").innerHTML = "<p>No courses found yet. Generate one from Base44!</p>";
+        return;
+      }
+
+      const html = data.map(f => 
+        `<a href='./content/${f.name}' target='_blank'>${f.name.replace('.md','').replace(/-/g,' ')}</a>`
+      ).join('');
+      document.getElementById("list").innerHTML = html;
+    }
+    loadCourses();
+  </script>
+</body>
+</html>
