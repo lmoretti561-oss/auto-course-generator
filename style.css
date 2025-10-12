@@ -1,0 +1,50 @@
+/* JHAF Mindset Horse Training - style.css */
+/* Colors: Forest Green (#1B4D3E), Gold (#D4AF37), White (#FFFFFF) */
+
+:root{
+  --forest-green: #1B4D3E;
+  --gold: #D4AF37;
+  --white: #FFFFFF;
+  --muted: #f7f6f4;
+  --max-width: 1100px;
+  --radius: 12px;
+  --gap: 18px;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--muted);color:var(--forest-green);line-height:1.45}
+.app{max-width:var(--max-width);margin:28px auto;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(27,77,62,0.06)}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:linear-gradient(90deg,var(--forest-green), #144434);color:var(--white)}
+.brand h1{font-size:1.25rem;letter-spacing:0.6px}
+.tagline{font-size:0.9rem;opacity:0.95}
+
+.split-layout{display:flex;gap:var(--gap)}
+
+.sidebar{width:320px;padding:24px;background:linear-gradient(180deg,var(--white), #fbfbfb);border-right:1px solid #eee}
+.course-title{font-weight:700;margin-bottom:12px;color:var(--forest-green);font-size:1.05rem}
+.lesson-list a{display:block;padding:10px;border-radius:10px;text-decoration:none;margin-bottom:8px;color:var(--forest-green);background:#fff;border:1px solid #f0f0f0}
+.lesson-list a:hover{background:linear-gradient(90deg,var(--gold), #f4e7b7);color:#111; transform:translateX(4px)}
+
+.outcomes h3{margin-top:14px;margin-bottom:8px;color:var(--forest-green);font-size:0.95rem}
+.outcomes ul{padding-left:18px;color:#2b2b2b}
+
+.content-area{flex:1;padding:28px}
+.course-intro{background:linear-gradient(180deg,#fff,#fcfcfc);padding:18px;border-radius:12px;border:1px solid #f1efe9;margin-bottom:18px}
+.course-intro h2{color:var(--forest-green);margin-bottom:8px}
+.lessons .lesson{padding:16px;border-radius:12px;background:#fff;border:1px solid #f0f0f0;margin-bottom:14px}
+.lesson h3{color:var(--forest-green);margin-bottom:6px}
+.lesson p{color:#333}
+
+.quiz{margin-top:20px;padding:16px;background:#fff;border-radius:10px;border:1px solid #f0f0f0}
+.quiz h3{color:var(--forest-green)}
+
+.site-footer{text-align:center;padding:14px;font-size:0.85rem;color:#777;background:#faf9f7;border-top:1px solid #eee}
+
+/* Responsive */
+@media (max-width: 900px){
+  .split-layout{flex-direction:column}
+  .sidebar{width:100%;order:2;border-right:none;border-top:1px solid #eee}
+  .content-area{order:1}
+}
