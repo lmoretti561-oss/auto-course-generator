@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Building Confidence in Horse and Rider — JHAF Mindset Horse Training</title>
+  <style>
+/* JHAF Mindset Horse Training - style.css */
+/* Colors: Forest Green (#1B4D3E), Gold (#D4AF37), White (#FFFFFF) */
+
+:root{
+  --forest-green: #1B4D3E;
+  --gold: #D4AF37;
+  --white: #FFFFFF;
+  --muted: #f7f6f4;
+  --max-width: 1100px;
+  --radius: 12px;
+  --gap: 18px;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--muted);color:var(--forest-green);line-height:1.45}
+.app{max-width:var(--max-width);margin:28px auto;background:var(--white);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(27,77,62,0.06)}
+
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:linear-gradient(90deg,var(--forest-green), #144434);color:var(--white)}
+.brand h1{font-size:1.25rem;letter-spacing:0.6px}
+.tagline{font-size:0.9rem;opacity:0.95}
+
+.split-layout{display:flex;gap:var(--gap)}
+
+.sidebar{width:320px;padding:24px;background:linear-gradient(180deg,var(--white), #fbfbfb);border-right:1px solid #eee}
+.course-title{font-weight:700;margin-bottom:12px;color:var(--forest-green);font-size:1.05rem}
+.lesson-list{margin-top:10px}
+.module-title{font-weight:600;color:#2c5b4d;margin-top:16px;margin-bottom:8px;font-size:0.95rem}
+.lesson-list a{display:block;padding:8px 12px;border-radius:8px;text-decoration:none;margin-bottom:6px;color:var(--forest-green);background:#fff;border:1px solid #f0f0f0;font-size:0.9rem}
+.lesson-list a:hover{background:linear-gradient(90deg,var(--gold), #f4e7b7);color:#111; transform:translateX(4px)}
+
+.outcomes h3{margin-top:14px;margin-bottom:8px;color:var(--forest-green);font-size:0.95rem}
+.outcomes ul{padding-left:18px;color:#2b2b2b}
+
+.content-area{flex:1;padding:28px}
+.course-intro{background:linear-gradient(180deg,#fff,#fcfcfc);padding:18px;border-radius:12px;border:1px solid #f1efe9;margin-bottom:18px}
+.course-intro h2{color:var(--forest-green);margin-bottom:8px}
+
+.module-section{margin-bottom:30px;padding-top:20px;border-top:1px solid #eee}
+.module-section:first-of-type{border-top:none;padding-top:0}
+.module-section h2{color:var(--forest-green);font-size:1.6rem;margin-bottom:15px}
+.module-section p{color:#444;line-height:1.5;margin-bottom:20px}
+
+.lessons .lesson{padding:16px;border-radius:12px;background:#fff;border:1px solid #f0f0f0;margin-bottom:14px}
+.lesson h3{color:var(--forest-green);margin-bottom:6px;font-size:1.2rem}
+.lesson p{color:#333;font-size:0.95rem}
+.lesson .lesson-content{margin-top:10px;line-height:1.6;color:#333}
+
+.quiz{margin-top:20px;padding:16px;background:#fff;border-radius:10px;border:1px solid #f0f0f0}
+.quiz h3{color:var(--forest-green)}
+
+.site-footer{text-align:center;padding:14px;font-size:0.85rem;color:#777;background:#faf9f7;border-top:1px solid #eee}
+
+/* Responsive */
+@media (max-width: 900px){
+  .split-layout{flex-direction:column}
+  .sidebar{width:100%;order:2;border-right:none;border-top:1px solid #eee}
+  .content-area{order:1}
+}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="site-header">
+      <div class="brand">
+        <h1>JHAF Mindset Horse Training</h1>
+      </div>
+      <div class="tagline">Learn. Connect. Ride with Heart.</div>
+    </header>
+
+    <main class="split-layout">
+      <aside class="sidebar">
+        <div class="course-title">Building Confidence in Horse and Rider</div>
+        <nav class="lesson-list">
+          <div class="module-title">Week 1: Module 1: Understanding Your Horse</div>
+          <a href="#module-0-lesson-0">Lesson 1: Horse Body Language</a>
+          <a href="#module-0-lesson-1">Lesson 2: Building Trust Through Groundwork</a>
+          <a href="#module-0-lesson-2">Lesson 3: Assessing Your Horse's Health</a>
+          <a href="#module-0-lesson-3">Lesson 4: The Importance of Proper Tack Fitting</a>
+          <a href="#module-0-lesson-4">Lesson 5: Creating a Safe Environment</a>
+<div class="module-title">Week 2: Module 2: Effective Communication with Your Horse</div>
+          <a href="#module-1-lesson-0">Lesson 1: Establishing Clear Cues</a>
+          <a href="#module-1-lesson-1">Lesson 2: The Art of Patience</a>
+          <a href="#module-1-lesson-2">Lesson 3: Encouraging Positive Behavior</a>
+          <a href="#module-1-lesson-3">Lesson 4: Reading Your Horse's Responses</a>
+          <a href="#module-1-lesson-4">Lesson 5: Utilizing Groundwork for Communication</a>
+<div class="module-title">Week 3: Module 3: Developing Riding Confidence</div>
+          <a href="#module-2-lesson-0">Lesson 1: Preparing to Ride</a>
+          <a href="#module-2-lesson-1">Lesson 2: Basic Riding Techniques</a>
+          <a href="#module-2-lesson-2">Lesson 3: Overcoming Fear and Anxiety</a>
+          <a href="#module-2-lesson-3">Lesson 4: Riding for Trust and Confidence</a>
+          <a href="#module-2-lesson-4">Lesson 5: Navigating Obstacles and Challenges</a>
+<div class="module-title">Week 4: Module 4: Experiencing the Outdoors</div>
+          <a href="#module-3-lesson-0">Lesson 1: Preparing for Trail Rides</a>
+          <a href="#module-3-lesson-1">Lesson 2: How to Handle Trail Obstacles</a>
+          <a href="#module-3-lesson-2">Lesson 3: Navigating Natural Environments</a>
+          <a href="#module-3-lesson-3">Lesson 4: Bonding on the Trail</a>
+          <a href="#module-3-lesson-4">Lesson 5: Safety First on Trail Rides</a>
+<div class="module-title">Week 5: Module 5: Fine-tuning Your Skills</div>
+          <a href="#module-4-lesson-0">Lesson 1: Advanced Riding Techniques</a>
+          <a href="#module-4-lesson-1">Lesson 2: Incorporating Dressage Principles</a>
+          <a href="#module-4-lesson-2">Lesson 3: Building Routine for Practice</a>
+          <a href="#module-4-lesson-3">Lesson 4: Group Riding and Community</a>
+          <a href="#module-4-lesson-4">Lesson 5: Celebrating Your Progress</a>
+<div class="module-title">Week 6: Module 6: The Journey Ahead</div>
+          <a href="#module-5-lesson-0">Lesson 1: Creating a Personal Development Plan</a>
+          <a href="#module-5-lesson-1">Lesson 2: Continuing Education and Resources</a>
+          <a href="#module-5-lesson-2">Lesson 3: Setting Up for Success in Competitions</a>
+          <a href="#module-5-lesson-3">Lesson 4: Building Resilience in Your Journey</a>
+          <a href="#module-5-lesson-4">Lesson 5: Celebrating Your Equestrian Journey</a>
+
+        </nav>
+        <div class="outcomes">
+          <h3>Learning Outcomes</h3>
+          <ul>
+            <li>Improved confidence in handling and riding horses</li>
+            <li>Stronger understanding of equine behavior</li>
+            <li>Enhanced communication skills between horse and rider</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="content-area">
+        <article class="course-intro">
+          <p>Welcome to 'Building Confidence in Horse and Rider', a 6-week course designed specifically for beginner horse owners. In this course, you will learn essential skills and techniques to boost both your confidence and that of your horse. We will explore foundational concepts in horse handling, riding, and trust-building exercises. Through engaging lessons and practical activities, you will develop a deeper understanding of horse behavior while fostering a strong partnership with your equine friend.</p>
+        </article>
+
+        <div class="modules">
+          
+        <div class="module-section">
+          <h2>Week 1: Module 1: Understanding Your Horse</h2>
+          <p>This week, we will focus on the fundamentals of horse behavior and communication. Understanding how horses think and react is crucial for building a trusting relationship.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-0-lesson-0">
+              <h3>Lesson 1: Horse Body Language</h3>
+              <p>This lesson will explore the various signs of horse body language and how to interpret them.</p>
+              <div class="lesson-content">
+                <p>Horses are highly social animals that communicate through body language. Understanding these cues is essential for any horse owner. For instance, a horse that pins its ears back may be feeling threatened or irritated, while one that stands relaxed with ears forward is likely comfortable and attentive. In this lesson, we will discuss key body language signs, including:</p><ul><li><strong>Ear Position:</strong> Ears indicate a horse's mood and alertness.</li><li><strong>Tail Movement:</strong> A swishing tail can signify annoyance, while a relaxed tail indicates calmness.</li><li><strong>Posture:</strong> The way a horse stands can indicate its confidence level.</li></ul><p>By the end of this lesson, you will be able to read your horse's body language effectively, improving your interactions and enhancing communication.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-0-lesson-1">
+              <h3>Lesson 2: Building Trust Through Groundwork</h3>
+              <p>This lesson will cover basic groundwork activities that build trust and confidence between you and your horse.</p>
+              <div class="lesson-content">
+                <p>Groundwork is an essential part of horse training and can significantly improve your relationship with your horse. Trust-building exercises like leading, lunging, and desensitization to pressure are paramount. In this lesson, we will:</p><ul><li>Discuss the importance of personal space and how it relates to trust.</li><li>Learn how to effectively lead your horse, making it feel safe and secure.</li><li>Practice lunging, which helps to develop your horse's confidence and responsiveness to commands.</li></ul><p>Through consistent groundwork practices, you will see your horse start to trust you more, leading to greater confidence in both riding and handling.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-0-lesson-2">
+              <h3>Lesson 3: Assessing Your Horse's Health</h3>
+              <p>Understanding your horse's health is vital for both their well-being and your confidence as a rider.</p>
+              <div class="lesson-content">
+                <p>A healthy horse is a confident horse. In this lesson, we will learn how to conduct a basic health check, including:</p><ul><li><strong>Evaluate BCS (Body Condition Score):</strong> Learn how to assess your horse's physical condition.</li><li><strong>Check Vital Signs:</strong> Understand how to take your horse's temperature, pulse, and respiration.</li><li><strong>Recognizing Signs of Illness:</strong> Familiarize yourself with common indicators that may signal health issues.</li></ul><p>This foundational knowledge will empower you to prioritize your horse's health, which in turn will boost your confidence as a caregiver and rider.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-0-lesson-3">
+              <h3>Lesson 4: The Importance of Proper Tack Fitting</h3>
+              <p>This lesson covers how to properly fit tack to ensure comfort and safety for your horse.</p>
+              <div class="lesson-content">
+                <p>Using improperly fitted tack can cause discomfort and lead to behavioral issues, so it's critical to ensure that your tack is suitable. In this lesson, we will learn about:</p><ul><li><strong>Types of Tack:</strong> Understanding saddles, bridles, and other equipment.</li><li><strong>Fitting Techniques:</strong> Techniques for fitting a saddle correctly and checking bridle fit.</li><li><strong>Signs of Poor Fit:</strong> Identifying issues that might arise from poorly fitting tack.</li></ul><p>Ensuring your tack fits properly will give you the peace of mind to ride confidently without worrying about your horse's comfort.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-0-lesson-4">
+              <h3>Lesson 5: Creating a Safe Environment</h3>
+              <p>Learn how to create a safe and encouraging environment for both you and your horse.</p>
+              <div class="lesson-content">
+                <p>A safe environment is foundational to building confidence. This lesson will cover aspects of barn management and safe riding practices, including:</p><ul><li><strong>Barn Safety:</strong> Tips for maintaining a clean, safe stall or barn area.</li><li><strong>Rider Safety:</strong> Discussing the importance of wearing helmets and appropriate footwear.</li><li><strong>General Care:</strong> Guidelines for safely grooming, leading, and handling your horse.</li></ul><p>By the end of this lesson, you will understand how a professional and safe environment contributes to a positive experience both on the ground and in the saddle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-section">
+          <h2>Week 2: Module 2: Effective Communication with Your Horse</h2>
+          <p>In the second week, we will delve deeper into communication techniques that reinforce the connection between horse and rider.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-1-lesson-0">
+              <h3>Lesson 1: Establishing Clear Cues</h3>
+              <p>This lesson emphasizes the importance of giving clear, consistent cues to your horse.</p>
+              <div class="lesson-content">
+                <p>Horses respond best to clear and consistent cues. In this lesson, we will cover how to establish verbal and physical signals that your horse can understand, including:</p><ul><li><strong>Verbal Cues:</strong> Simple words that command attention.</li><li><strong>Body Language:</strong> Using your body to communicate—important non-verbal cues.</li><li><strong>Consistency:</strong> How to maintain consistency in cues and handling.</li></ul><p>Effective communication is the cornerstone of building confidence—both for yourself and your horse.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-1-lesson-1">
+              <h3>Lesson 2: The Art of Patience</h3>
+              <p>Learn about the importance of patience in building a confident relationship with your horse.</p>
+              <div class="lesson-content">
+                <p>Patience plays a critical role in training and interacting with horses. In this lesson, we will explore how patience affects behavior and learning, including:</p><ul><li>The importance of allowing your horse time to process commands.</li><li>Understanding that setbacks may occur and how to handle them positively.</li><li>Techniques for fostering patience in your training sessions.</li></ul><p>By incorporating patience into your routine, you and your horse will have a more constructive learning experience.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-1-lesson-2">
+              <h3>Lesson 3: Encouraging Positive Behavior</h3>
+              <p>Learn how to reinforce positive behaviors in your horse through effective training techniques.</p>
+              <div class="lesson-content">
+                <p>Reinforcing desired behaviors is essential for building confidence. This lesson will cover:</p><ul><li><strong>Positive Reinforcement:</strong> The benefits of rewarding good behavior.</li><li><strong>Clicker Training:</strong> Introduction to clicker training as a method of encouragement.</li><li><strong>Avoiding Negative Reinforcement:</strong> Techniques to reduce fear-based reactions.</li></ul><p>Encouraging positive behaviors establishes a supportive environment for both horse and rider.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-1-lesson-3">
+              <h3>Lesson 4: Reading Your Horse's Responses</h3>
+              <p>This lesson examines how to interpret your horse's reactions to your communication.</p>
+              <div class="lesson-content">
+                <p>Understanding your horse's responses to your cues allows for a more harmonious relationship. In this lesson, we will focus on:</p><ul><li>The significance of a horse's ears, eyes, and posture in determining their mood.</li><li>How to identify signs of confusion or fear in your horse’s behavior.</li><li>Adjusting your cues based on your horse’s feedback.</li></ul><p>By tuning into your horse’s responses, you can build a stronger bond and mutual confidence.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-1-lesson-4">
+              <h3>Lesson 5: Utilizing Groundwork for Communication</h3>
+              <p>This lesson focuses on how groundwork can enhance communication with your horse.</p>
+              <div class="lesson-content">
+                <p>Groundwork is not just for training; it is also an effective means of enhancing communication. In this lesson, we will cover:</p><ul><li>Benefits of groundwork exercises for emotional connection.</li><li>Various groundwork exercises that promote understanding and responsiveness.</li><li>Ways to read your horse’s body language during groundwork.</li></ul><p>Engaging in groundwork fosters mutual respect and clarity in communication, leading to greater confidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-section">
+          <h2>Week 3: Module 3: Developing Riding Confidence</h2>
+          <p>This week focuses on building your riding skills and confidence while in the saddle.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-2-lesson-0">
+              <h3>Lesson 1: Preparing to Ride</h3>
+              <p>Preparing yourself mentally and physically before riding is crucial for confidence.</p>
+              <div class="lesson-content">
+                <p>Riding preparation goes beyond just tacking up your horse. This lesson will address:</p><ul><li>How to mentally prepare yourself for a successful ride.</li><li>The importance of a proper warm-up for both you and your horse.</li><li>Reviewing safety protocols before mounting up.</li></ul><p>A well-prepared rider is a confident rider, and this ensures a positive experience whenever you saddle up.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-2-lesson-1">
+              <h3>Lesson 2: Basic Riding Techniques</h3>
+              <p>We'll cover essential riding techniques for beginners to establish a confident riding foundation.</p>
+              <div class="lesson-content">
+                <p>This lesson introduces basic riding techniques that are crucial for effective communication while riding:</p><ul><li><strong>Seat Position:</strong> Understanding how your seat affects your horse’s balance.</li><li><strong>Hands and Reins:</strong> How to properly hold your reins and communicate through your hands.</li><li><strong>Leg Aids:</strong> Basic leg aids for turning and stopping safely.</li></ul><p>Mastering these fundamentals lays the groundwork for building confidence in riding.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-2-lesson-2">
+              <h3>Lesson 3: Overcoming Fear and Anxiety</h3>
+              <p>Learn strategies to manage fear and anxiety associated with riding.</p>
+              <div class="lesson-content">
+                <p>Fear can be a significant barrier to enjoying riding. This lesson will equip you with strategies to manage anxiety, including:</p><ul><li>Identifying your triggers and fears.</li><li>Techniques for calming both yourself and your horse.</li><li>Positive visualization techniques to envision successful rides.</li></ul><p>By gaining strategies to address fear, you will foster a more confident riding experience.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-2-lesson-3">
+              <h3>Lesson 4: Riding for Trust and Confidence</h3>
+              <p>Learn how to establish a trusting relationship while riding to enhance confidence.</p>
+              <div class="lesson-content">
+                <p>Trust is a critical element in riding. This lesson will focus on how mutual trust develops through consistent riding and handling:</p><ul><li>Establishing routines that promote comfort for both you and your horse.</li><li>Working at a pace suitable for both rider and horse.</li><li>Recognizing when to push boundaries and when to retreat.</li></ul><p>Trust-building exercises during rides create an enjoyable atmosphere and enhance both horse and rider confidence.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-2-lesson-4">
+              <h3>Lesson 5: Navigating Obstacles and Challenges</h3>
+              <p>This lesson will discuss how to effectively navigate challenges while riding.</p>
+              <div class="lesson-content">
+                <p>Every rider will face challenges on their journey. In this lesson, we will explore strategies for dealing with various scenarios:</p><ul><li>How to approach new experiences, such as jumping or trail riding.</li><li>Dealing with distractions and unexpected events.</li><li>Methods for building confidence in riding outside of the arena.</li></ul><p>Being equipped to handle challenges will bolster your confidence while riding.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-section">
+          <h2>Week 4: Module 4: Experiencing the Outdoors</h2>
+          <p>This week focuses on building confidence through outdoor riding experiences.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-3-lesson-0">
+              <h3>Lesson 1: Preparing for Trail Rides</h3>
+              <p>Learn how to properly prepare for a successful and safe trail ride.</p>
+              <div class="lesson-content">
+                <p>Trail riding offers unique opportunities to develop confidence. This lesson covers:</p><ul><li>Pre-ride checks to ensure both horse and equipment are fit for the outdoors.</li><li>Planning your route and understanding trail etiquette.</li><li>The importance of companionship and riding in groups.</li></ul><p>Proper preparation for outdoor activities fosters both confidence and safety.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-3-lesson-1">
+              <h3>Lesson 2: How to Handle Trail Obstacles</h3>
+              <p>Understand different types of obstacles you may encounter on the trail.</p>
+              <div class="lesson-content">
+                <p>Trail riding presents unique challenges that differ from arena riding. In this lesson, we will explore:</p><ul><li>Identifying common obstacles, such as streams, bridges, and steep terrain.</li><li>Strategies for approaching obstacles calmly and confidently.</li><li>Techniques to encourage your horse to face challenges.</li></ul><p>Awareness and practice in handling obstacles builds trust and strengthens the bond between horse and rider.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-3-lesson-2">
+              <h3>Lesson 3: Navigating Natural Environments</h3>
+              <p>This lesson focuses on understanding how to navigate natural environments safely.</p>
+              <div class="lesson-content">
+                <p>Exploring natural surroundings enhances the riding experience. This lesson will cover:</p><ul><li>Reading the environment and recognizing hazards.</li><li>How to react if your horse is startled by wildlife.</li><li>Practices for remaining calm and confident in various situations.</li></ul><p>Navigating nature safely enriches the experience and builds confidence in both riders and horses.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-3-lesson-3">
+              <h3>Lesson 4: Bonding on the Trail</h3>
+              <p>Strategies on how to bond and connect with your horse during trail rides.</p>
+              <div class="lesson-content">
+                <p>Trail riding is not just about the ride; it's about the journey together. In this lesson, we will explore:</p><ul><li>Engagement techniques to connect emotionally while riding.</li><li>Taking breaks to bond through ground training exercises.</li><li>How to ensure your horse feels secure during the ride.</li></ul><p>Builds a deeper understanding and mutual respect that enhances both horse and rider connection.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-3-lesson-4">
+              <h3>Lesson 5: Safety First on Trail Rides</h3>
+              <p>Learn vital safety tips that are specific to trail riding.</p>
+              <div class="lesson-content">
+                <p>Safety is paramount when venturing outdoors. This lesson addresses key safety principles such as:</p><ul><li>Bringing appropriate gear and first-aid kits.</li><li>Understanding trail signs and boundaries.</li><li>Protocols for emergency situations during trail rides.</li></ul><p>By practicing safety, riders can feel confident and secure in their decisions while out in nature.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-section">
+          <h2>Week 5: Module 5: Fine-tuning Your Skills</h2>
+          <p>This week we will refine technical and riding skills to enhance confidence further.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-4-lesson-0">
+              <h3>Lesson 1: Advanced Riding Techniques</h3>
+              <p>We will build upon basic techniques for advanced riding skills.</p>
+              <div class="lesson-content">
+                <p>This lesson provides an overview of advanced riding techniques beneficial to increasing your confidence:</p><ul><li>Learning the nuances of body control and rein adjustments.</li><li>Introduction to gait transitions and maintaining pace.</li><li>Exploring advanced maneuvers like lateral work and shoulder-in.</li></ul><p>A comprehensive understanding of these techniques helps you ride more confidently and effectively.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-4-lesson-1">
+              <h3>Lesson 2: Incorporating Dressage Principles</h3>
+              <p>Discover fundamental dressage principles to improve performance and confidence.</p>
+              <div class="lesson-content">
+                <p>Dressage isn’t just for show; it enhances performance and confidence for both the horse and rider. In this lesson:</p><ul><li>Learn the basics of dressage movements and terminology.</li><li>Understand how dressage exercises lead to better communication and connection.</li><li>Practice exercises that promote collection and responsiveness.</li></ul><p>Utilizing dressage principles refines your abilities, making riding more enjoyable.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-4-lesson-2">
+              <h3>Lesson 3: Building Routine for Practice</h3>
+              <p>Establish a consistent training routine that encourages confidence.</p>
+              <div class="lesson-content">
+                <p>Creating a structured practice routine benefits horse and rider. This lesson will cover:</p><ul><li>How to create a balanced practice schedule focusing on various skills.</li><li>Incorporating groundwork and mounted work into routine.</li><li>Setting achievable goals and measuring progress.</li></ul><p>A structured routine leads to continued improvement, which in turn boosts confidence.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-4-lesson-3">
+              <h3>Lesson 4: Group Riding and Community</h3>
+              <p>Learn the benefits of riding with others to enhance social confidence.</p>
+              <div class="lesson-content">
+                <p>Riding in a community setting can help alleviate anxiety and bolster confidence. In this lesson:</p><ul><li>Discuss the advantages of group lessons and rides.</li><li>How to develop supportive relationships within the equine community.</li><li>Participating in local events that promote camaraderie.</li></ul><p>Engaging with a community encourages shared experiences and builds confidence through support.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-4-lesson-4">
+              <h3>Lesson 5: Celebrating Your Progress</h3>
+              <p>Recognize and celebrate your achievements to enhance your confidence journey.</p>
+              <div class="lesson-content">
+                <p>Recognizing progress and milestones is important for building confidence. This lesson focuses on:</p><ul><li>The significance of keeping a journal to track achievements.</li><li>Setting mini-goals and rewarding yourself.</li><li>Sharing accomplishments with others and seeking feedback.</li></ul><p>Celebrating progress cultivates a positive mindset and encourages continued growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="module-section">
+          <h2>Week 6: Module 6: The Journey Ahead</h2>
+          <p>This final module will focus on planning your ongoing equestrian journey to ensure continued growth and confidence.</p>
+          
+          <div class="lessons">
+            <div class="lesson" id="module-5-lesson-0">
+              <h3>Lesson 1: Creating a Personal Development Plan</h3>
+              <p>Establish a clear development plan that maps out future goals.</p>
+              <div class="lesson-content">
+                <p>Mapping out your equestrian journey helps maintain focus and motivation. In this lesson, we'll cover:</p><ul><li>Identifying short-term and long-term goals.</li><li>How to adapt and adjust your plan as you progress.</li><li>Integrating feedback from your experiences into future planning.</li></ul><p>A personal development plan creates a roadmap, encouraging ongoing learning and confidence.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-5-lesson-1">
+              <h3>Lesson 2: Continuing Education and Resources</h3>
+              <p>Discover various avenues for continued education in horsemanship.</p>
+              <div class="lesson-content">
+                <p>Continuous learning strengthens your skills. This lesson focuses on:</p><ul><li>Types of workshops, clinics, and online courses available.</li><li>Recommended books and online resources for continued learning.</li><li>The importance of joining clubs or organizations for networking.</li></ul><p>Exploring educational resources keeps your passion alive and confidence growing.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-5-lesson-2">
+              <h3>Lesson 3: Setting Up for Success in Competitions</h3>
+              <p>Learn how to prepare for competitions to build confidence and performance.</p>
+              <div class="lesson-content">
+                <p>If competition interests you, this lesson highlights:</p><ul><li>How to prepare both horse and rider for competition levels.</li><li>Understanding show etiquette and best practices.</li><li>Managing nerves and expectations during competitions.</li></ul><p>Preparation for competition equips you with the tools needed for success.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-5-lesson-3">
+              <h3>Lesson 4: Building Resilience in Your Journey</h3>
+              <p>Strategies to build resilience and overcome challenges in your equestrian journey.</p>
+              <div class="lesson-content">
+                <p>Resilience is key to continued progress. In this lesson we will cover:</p><ul><li>How to view challenges as opportunities for growth.</li><li>Techniques for bouncing back after setbacks.</li><li>Building a supportive network for encouragement.</li></ul><p>Developing resilience fosters a positive mindset and enhances confidence.</p>
+              </div>
+            </div>
+            <div class="lesson" id="module-5-lesson-4">
+              <h3>Lesson 5: Celebrating Your Equestrian Journey</h3>
+              <p>Reflect on your journey and celebrate your achievements and experiences.</p>
+              <div class="lesson-content">
+                <p>Reflection is an important part of growth. In this final lesson, we will:</p><ul><li>Evaluate your progress over the last six weeks.</li><li>Share your experiences with fellow riders.</li><li>Discuss future aspirations and how to keep the momentum going.</li></ul><p>Celebrating your journey acknowledges your dedication and encourages continuous improvement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="quiz">
+          <h3>Reflection / Quiz</h3>
+          <h4>Week 1 Quiz</h4><p>Quiz: What does it mean if a horse pins its ears back? A) Happy B) Threatened C) Hungry</p><p>Correct Answer: B) Threatened</p><p>Please answer the following questions regarding horse body language and trust-building techniques discussed in this module.</p><h4>Week 2 Quiz</h4><p>Quiz: What is the benefit of rewarding good behavior? A) It creates confusion B) It builds trust C) It has no effect</p><p>Correct Answer: B) It builds trust</p><p>Test your knowledge on communication techniques and practices discussed this week.</p><h4>Week 3 Quiz</h4><p>Quiz: What is one technique to help manage riding anxiety? A) Focus on the negatives B) Visualize success C) Avoid thinking</p><p>Correct Answer: B) Visualize success</p><p>Evaluate your understanding of riding techniques and anxiety management from this module.</p><h4>Week 4 Quiz</h4><p>Quiz: What should you check before heading out on a trail ride? A) Your phone B) Your horse and gear C) Your lunch</p><p>Correct Answer: B) Your horse and gear</p><p>Assess your knowledge of the prepared topics for trail riding.</p><h4>Week 5 Quiz</h4><p>Quiz: What is a benefit of setting achievable goals in riding? A) It limits progress B) It creates stress C) It builds confidence</p><p>Correct Answer: C) It builds confidence</p><p>Evaluate what you learned about skills refinement this week.</p><h4>Week 6 Quiz</h4><p>Quiz: Why is setting long-term goals important? A) It provides motivation B) It creates confusion C) It limits you</p><p>Correct Answer: A) It provides motivation</p><p>Review your understanding of the content covered in this final module.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      © Just Horsin Around Farm — All Rights Reserved
+    </footer>
+  </div>
+</body>
+</html>
